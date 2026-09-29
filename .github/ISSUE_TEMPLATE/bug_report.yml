@@ -1,0 +1,46 @@
+name: Сообщить о баге
+description: Приложение ведёт себя неправильно или не запускается
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа
+      options:
+        - Android
+        - Windows
+        - iOS
+      validations:
+        required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия приложения
+      placeholder: "Например, 1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло
+      description: Опишите проблему своими словами
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как воспроизвести
+      description: Шаги, которые приводят к ошибке
+      placeholder: |
+        1. Открыл приложение
+        2. Нажал кнопку подключения
+        3. Произошло...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Скриншот или текст ошибки
+      description: Приложите скриншот, если это поможет
+    validations:
+      required: false

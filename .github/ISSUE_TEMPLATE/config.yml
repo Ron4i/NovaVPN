@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Вопрос или идея
+    url: https://github.com/Ron4i/NovaVPN/discussions
+    about: Задайте вопрос или предложите идею
+  - name: Уязвимость
+    url: https://github.com/Ron4i/NovaVPN/security/advisories/new
+    about: Сообщите об уязвимости приватно, не создавая публичный issue
